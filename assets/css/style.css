@@ -68,7 +68,8 @@ main {
 #latest-posts,
 #community-links,
 #curated-posts {
-  width: 90%;
+  width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
   background-color: pink;
 }
@@ -81,14 +82,13 @@ main {
 }
 
 #latest-posts .col-1 {
-  width: 30%;
+  width: 100%;
   height: 500px;
   background-color: #aff;
 }
 
-#latest-posts .col-1,
-#latest-posts .col-1-2 {
-  margin: 10px;
+#latest-posts [class*='col-'] {
+  /*margin: 10px;*/
 }
 
 #latest-posts .col-1:nth-child(2n) {
@@ -131,7 +131,22 @@ main {
   flex-wrap: wrap;
 }
 
-#community-links .col-1 {
+#community-links .col-1-4 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100px auto;
+
+}
+#community-links .col-1-4 .photo {
+  background-color: #aaa;
+}
+
+#community-links .col-1-4 .text {
+  background-color: #ccc;
+}
+
+
+#community-links [class*='col-'] {
   height: 250px;
   width: 100%;
   background: #bbb;
@@ -143,19 +158,20 @@ main {
 }
 #curated-posts > * {
   display: inline-block;
-  height: 100px;
+  width: 100%;
+  height: 300px;
 }
 #curated-posts .guide:nth-child(4n-3) {
-  background-color: #5ff;
+  background-color: #999;
 }
 #curated-posts .guide:nth-child(4n-2) {
-  background-color: #aff;
+  background-color: #aaa;
 }
 #curated-posts .guide:nth-child(4n-1) {
-  background-color: #ffa;
+  background-color: #ddd;
 }
 #curated-posts .guide:nth-child(4n) {
-  background-color: #ff5;
+  background-color: #666;
 }
 #curated-posts .col-1-4 {
   background-color: #99f;
@@ -187,20 +203,22 @@ footer {
   background-color: #999;
 }
 
-@media only screen and (min-width: 480px) {
-  #curated-posts .col-1 {
-    width: 100%;
-  }
-  #curated-posts .col-1-4 {
-    width: 100%;
-  }
-
-  header .box-container div {
-    width: 50%;
+@media only screen and (max-width: 1080px) {
+  #category {
+    display: none;
   }
 }
 
-@media only screen and (min-width: 860px) {
+@media only screen and (min-width: 480px) {
+}
+
+@media only screen and (min-width: 740px) {
+  header .box-container div {
+    width: 50%;
+  }
+  #latest-posts .col-1 {
+    width: 49%;
+  }
   #curated-posts .col-1 {
     width: 49%;
   }
@@ -213,13 +231,10 @@ footer {
   }
 }
 
-@media only screen and (max-width: 1080px) {
-  #category {
-    display: none;
-  }
-}
-
 @media only screen and (min-width: 1080px) {
+  #latest-posts .col-1 {
+    width: 33%;
+  }
   #curated-posts .col-1 {
     width: 33%;
   }
@@ -234,5 +249,10 @@ footer {
   }
   #curated-posts .col-1-4 {
     width: calc(24% * 4);
+  }
+}
+@media only screen and (min-width: 1600px) {
+  #latest-posts .col-1  {
+    width: 24%;
   }
 }
