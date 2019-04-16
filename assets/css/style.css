@@ -3,20 +3,24 @@ html * {
   text-align: center;
 }
 
+body {
+  color: #000;
+}
+
 header {
   width: 100%;
   line-height: 80px;
   vertical-align: middle;
+  background: #b8b8b8;
 }
 #top-menu {
   width: 100%;
-  background-color: #aff;
   display: flex;
   justify-content: space-around;
 }
 
 #top-menu div {
-  background: #ccc;
+  background: #a9a9a9;
   margin: 0 15px;
   min-width: 130px;
 }
@@ -27,13 +31,12 @@ header {
 }
 
 #category div {
-  background: rgb(168, 168, 196);
+  background: #a9a9a9;
   width: 110px;
 }
 
 header .box-container {
   width: 100%;
-  background-color: #af7;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -46,19 +49,19 @@ header .box-container div {
 }
 
 header .box-container div:nth-child(4n) {
-  background: #cbb;
+  background: #b4b4b4;
 }
 
 header .box-container div:nth-child(4n - 1) {
-  background: #cdd;
+  background: #b8b8b8;
 }
 
 header .box-container div:nth-child(4n - 2) {
-  background: #cbe;
+  background: #bbb;
 }
 
 header .box-container div:nth-child(4n - 3) {
-  background: #cdf;
+  background: #bfbfbf;
 }
 
 main {
@@ -71,7 +74,6 @@ main {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  background-color: pink;
 }
 
 #latest-posts {
@@ -84,19 +86,19 @@ main {
 #latest-posts .col-1 {
   width: 100%;
   height: 500px;
-  background-color: #aff;
+  background-color: #c0c0c0;
 }
 
-#latest-posts [class*='col-'] {
+#latest-posts [class*="col-"] {
   /*margin: 10px;*/
 }
 
 #latest-posts .col-1:nth-child(2n) {
-  background-color: #afa;
+  background-color: #c2c2c2;
 }
 
 #latest-posts .col-1:nth-child(3n) {
-  background-color: #a5a;
+  background-color: #c7c7c7;
 }
 
 #latest-posts .col-1-2 {
@@ -107,25 +109,24 @@ main {
 
 #latest-posts .ad-small {
   width: 100%;
-  background: #55e;
+  background: #a0a0a0;
   height: 300px;
 }
 
 #latest-posts .ad-medium {
   width: 100%;
-  background: #fae;
+  background: #afafaf;
   height: 500px;
 }
 
 [class*="block-ad-"] {
   width: 100%;
   height: 100px;
-  background-color: #eaa;
+  background-color: #d0d0d0;
 }
 
 #community-links {
   width: 100%;
-  background-color: yellow;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -135,7 +136,6 @@ main {
   width: 100%;
   display: grid;
   grid-template-columns: 100px auto;
-
 }
 #community-links .col-1-4 .photo {
   background-color: #aaa;
@@ -145,8 +145,7 @@ main {
   background-color: #ccc;
 }
 
-
-#community-links [class*='col-'] {
+#community-links [class*="col-"] {
   height: 250px;
   width: 100%;
   background: #bbb;
@@ -154,7 +153,7 @@ main {
 }
 
 #curated-posts {
-  background-color: #ee9;
+  /* background-color: #ee9; */
 }
 #curated-posts > * {
   display: inline-block;
@@ -252,7 +251,7 @@ footer {
   }
 }
 @media only screen and (min-width: 1600px) {
-  #latest-posts .col-1  {
+  #latest-posts .col-1 {
     width: 24%;
   }
 }
