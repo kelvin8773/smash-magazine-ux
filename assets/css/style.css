@@ -67,21 +67,35 @@ main {
   flex-wrap: wrap;
 }
 
-#latest-posts .b-box {
+#latest-posts .col-1 {
   width: 33.33%;
   height: 500px;
-  background: #cce;
+  background-color: #aff;
+}
+
+#latest-posts .col-1:nth-child(2n) {
+  background-color: #afa;
+}
+
+#latest-posts .col-1:nth-child(3n) {
+  background-color: #a5a;
+}
+
+#latest-posts .col-1-2 {
+  width: 66.66%;
+  height: 500px;
+  background-color: #aff;
 }
 
 #latest-posts .ad-small {
-  width: 33.33%;
-  background: #ccb;
-  height: 500px;
+  width: 100%;
+  background: #55e;
+  height: 300px;
 }
 
 #latest-posts .ad-medium {
-  width: 66.66%;
-  background: #ccb;
+  width: 100%;
+  background: #fae;
   height: 500px;
 }
 
@@ -95,4 +109,92 @@ main {
 }
 
 #community-links {
+  height: 100px;
+  width: 100%;
+  background-color: yellow;
+}
+
+#curated-posts {
+  background-color: #ee9;
+}
+#curated-posts > * {
+  display: inline-block;
+  height: 100px;
+}
+#curated-posts .guide:nth-child(4n-3) {
+  background-color: #5ff;
+}
+#curated-posts .guide:nth-child(4n-2) {
+  background-color: #aff;
+}
+#curated-posts .guide:nth-child(4n-1) {
+  background-color: #ffa;
+}
+#curated-posts .guide:nth-child(4n) {
+  background-color: #ff5;
+}
+#curated-posts .col-1-4 {
+  background-color: #99f;
+}
+
+
+@media only screen and (min-width: 480px){
+  #curated-posts .col-1 {
+    width:100%;
+  }
+  #curated-posts .col-1-4 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 860px){
+  #curated-posts .col-1 {
+    width:49%;
+  }
+  #curated-posts .col-1-4 {
+    width: calc(49%*2);
+  }
+}
+
+@media only screen and (min-width: 1080px){
+  #curated-posts .col-1 {
+    width:33%;
+  }
+  #curated-posts .col-1-4 {
+    width: calc(33%*3);
+  }
+}
+
+@media only screen and (min-width: 1440px){
+  #curated-posts .col-1 {
+    width:24%;
+  }
+  #curated-posts .col-1-4 {
+    width: calc(24%*4);
+  }
+}
+/*
+@media only screen and (min-width: 1640px){
+  #curated-posts .col-1 {
+    width:24%;
+  }
+  #curated-posts .col-1-4 {
+    width: calc(24%*4);
+  }
+}
+
+@media only screen and (min-width: 1840px){
+  #curated-posts .col-1 {
+    width:24%;
+  }
+  #curated-posts .col-1-4 {
+    width: calc(24%*4);
+  }
+}
+*/
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #999;
 }
