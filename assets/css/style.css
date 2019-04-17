@@ -236,7 +236,6 @@ main {
 #community-links .profile {
   display: grid;
   grid-template-columns: 250px auto;
-  background-color: pink;
 }
 #community-links .col-1-4 .photo {
   background-color: #c7c7c7;
