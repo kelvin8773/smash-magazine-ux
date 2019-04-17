@@ -18,13 +18,19 @@ header {
 }
 
 p {
+  font-family: "Indie Flower", cursive;
   font-size: 26px;
-  line-height: calc(18px*1.5);
+  line-height: calc(18px * 1.5);
   font-weight: 400;
+  text-align: justify;
+  text-indent: 2em;
 }
 .f-s {
+  font-family: "Lora", serif;
   font-size: 22px;
   line-height: 1.5;
+  text-align: justify;
+  text-indent: 3em;
 }
 
 .f-m {
@@ -75,7 +81,6 @@ h3 {
   height: 80px;
 }
 
-
 #category .menu {
   background: #a9a9a9;
   width: 110px;
@@ -92,6 +97,11 @@ h3 {
 #opinions .col-1 {
   width: 100%;
   height: 500px;
+  padding: 30px 60px;
+}
+
+#opinions .col-1 p {
+  padding-top: 30px;
 }
 
 #opinions .col-1:nth-child(4n) {
@@ -132,6 +142,7 @@ main {
 #latest-posts .col-1 {
   width: 100%;
   height: 500px;
+  padding: 30px 50px;
 }
 
 #latest-posts [class*="col-"] {
@@ -170,8 +181,9 @@ main {
 
 [class*="block-ad-"] {
   width: 100%;
-  height: 100px;
+  height: 300px;
   background-color: #a4a4a4;
+  padding: 120px;
 }
 
 #community-links {
@@ -195,7 +207,7 @@ main {
 }
 
 #community-links .col-1-4 .text {
-  padding: 20px;
+  padding: 30px 50px;
   background-color: #cbcbcb;
 }
 #community-links .text p {
@@ -203,9 +215,18 @@ main {
 }
 
 #community-links [class*="col-"] {
-  height: 250px;
+  height: 280px;
   width: 100%;
 }
+
+#community-links .col-1 {
+  padding: 30px 50px;
+}
+
+#community-links .col-1 p {
+  padding-top: 30px;
+}
+
 #community-links .col-1:nth-child(4n-1) {
   background: #cecece;
 }
@@ -227,7 +248,7 @@ main {
   flex-wrap: wrap;
 }
 
-#curated-posts [class*='col-'] {
+#curated-posts [class*="col-"] {
   width: 100%;
   height: 300px;
 }
@@ -260,7 +281,6 @@ footer {
   }
 }
 
-
 @media only screen and (min-width: 740px) {
   #opinions .col-1 {
     width: 50%;
@@ -288,7 +308,7 @@ footer {
     width: 50%;
   }
   #community-links .col-1-4 .text p {
-    width: 70%!important;
+    width: 70% !important;
   }
   #curated-posts .col-1 {
     width: 33.3%;
