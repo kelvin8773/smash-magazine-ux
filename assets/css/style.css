@@ -86,20 +86,20 @@ h3 {
 }
 
 #top-menu .logo,
-#top-menu .search,
-#category {
+#top-menu .search {
   margin: 0 15px;
   min-width: 130px;
 }
 
 #category .menu {
-  /* background: #a9a9a9; */
   width: 160px;
+  max-width: 13vw;
+  margin: 0 5px;
 }
 
 #category {
   display: grid;
-  grid-template-columns: repeat(5, 180px);
+  grid-template-columns: repeat(5, auto);
 }
 
 #opinions {
@@ -333,7 +333,7 @@ footer li {
   line-height: 2em;
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1000px) {
   #category {
     display: none;
   }
