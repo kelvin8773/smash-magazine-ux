@@ -13,7 +13,6 @@ main {
 
 header {
   width: 100%;
-  line-height: 80px;
   vertical-align: middle;
   background: #b8b8b8;
 }
@@ -25,19 +24,34 @@ p {
 }
 .f-s {
   font-size: 22px;
-  line-height: 1.5em;
-  font-weight: 700;
+  line-height: 1.5;
 }
 
 .f-m {
   font-size: 28px;
-  line-height: 2em;
-  font-weight: 700;
+  line-height: 1.5;
 }
 
 .f-l {
   font-size: 36px;
-  line-height: 2.5em;
+  line-height: 1.5;
+}
+
+h5 {
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 28px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 36px;
+  line-height: 1.5;
   font-weight: 900;
 }
 
@@ -46,26 +60,28 @@ p {
   display: flex;
   justify-content: space-around;
 }
+#top-menu .logo,
+#top-menu .search,
+#category .menu {
+  padding-top: 25px;
+}
 
-#top-menu .box {
+#top-menu .logo,
+#top-menu .search,
+#category {
   background: #a9a9a9;
   margin: 0 15px;
   min-width: 130px;
-  padding-top: 30px;
   height: 80px;
 }
 
-#category {
-  display: grid;
-  grid-template-columns: repeat(5, 140px);
-}
 
-#category div {
+#category .menu {
   background: #a9a9a9;
   width: 110px;
 }
 
-header .box-container {
+#opinions {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -73,24 +89,24 @@ header .box-container {
   align-items: center;
 }
 
-header .box-container div {
+#opinions .col-1 {
   width: 100%;
   height: 500px;
 }
 
-header .box-container div:nth-child(4n) {
+#opinions .col-1:nth-child(4n) {
   background: #b4b4b4;
 }
 
-header .box-container div:nth-child(4n - 1) {
+#opinions .col-1:nth-child(4n - 1) {
   background: #b8b8b8;
 }
 
-header .box-container div:nth-child(4n - 2) {
+#opinions .col-1:nth-child(4n - 2) {
   background: #bbb;
 }
 
-header .box-container div:nth-child(4n - 3) {
+#opinions .col-1:nth-child(4n - 3) {
   background: #bfbfbf;
 }
 
@@ -135,7 +151,7 @@ main {
 }
 
 #latest-posts .col-1-2 {
-  width: 60%;
+  width: 100%;
   height: 500px;
   background-color: #cdcdcd;
 }
@@ -211,7 +227,7 @@ main {
   flex-wrap: wrap;
 }
 
-#curated-posts > * {
+#curated-posts [class*='col-'] {
   width: 100%;
   height: 300px;
 }
@@ -244,11 +260,9 @@ footer {
   }
 }
 
-@media only screen and (min-width: 480px) {
-}
 
 @media only screen and (min-width: 740px) {
-  header .box-container div {
+  #opinions .col-1 {
     width: 50%;
   }
   #latest-posts .col-1 {
@@ -257,21 +271,24 @@ footer {
   #curated-posts .col-1 {
     width: 50%;
   }
-  #curated-posts .col-1-4 {
-    width: calc(50% * 2);
-  }
-
-  #community-links .col-1 {
-    width: 50%;
-  }
 }
 
 @media only screen and (min-width: 1080px) {
+  #category {
+    display: grid;
+    grid-template-columns: repeat(5, 140px);
+  }
   #latest-posts .col-1 {
     width: 33.3%;
   }
   #latest-posts .col-1-2 {
     width: 66.6%;
+  }
+  #community-links .col-1 {
+    width: 50%;
+  }
+  #community-links .col-1-4 .text p {
+    width: 70%!important;
   }
   #curated-posts .col-1 {
     width: 33.3%;
@@ -279,14 +296,14 @@ footer {
   #curated-posts .col-1-4 {
     width: calc(33.3% * 2);
   }
-  #community-links .col-1-4 .text p {
-    width: 70%!important;
-  }
 }
 
-@media only screen and (min-width: 1440px) {
-  header .box-container div {
-    width: 33.3%;
+@media only screen and (min-width: 1500px) {
+  #latest-posts .col-1 {
+    width: 25%;
+  }
+  #latest-posts .col-1-2 {
+    width: 50%;
   }
   #curated-posts .col-1 {
     width: 25%;
@@ -295,14 +312,15 @@ footer {
     width: calc(25% * 4);
   }
 }
-@media only screen and (min-width: 1600px) {
-  header .box-container div {
-    width: 25%;
+
+@media only screen and (min-width: 1980px) {
+  #opinions .col-1 {
+    width: 33.33%;
   }
-  #latest-posts .col-1 {
+}
+
+@media only screen and (min-width: 2500px) {
+  #opinions .col-1 {
     width: 25%;
-  }
-  #latest-posts .col-1-2 {
-    width: 50%;
   }
 }
