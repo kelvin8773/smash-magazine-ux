@@ -9,7 +9,7 @@ body {
   font: 400 18px/1.5 "Ubuntu", sans-serif;
 }
 main {
-  background-color: #000; /*temp*/
+  background-color: #fff;
 }
 
 header {
@@ -19,10 +19,7 @@ header {
 }
 
 p {
-  font-family: "Indie Flower", cursive;
-  font-size: 26px;
-  line-height: calc(18px * 1.5);
-  font-weight: 400;
+  font : 400 26px/1.5 "Indie Flower", cursive;
   text-align: justify;
   text-indent: 2em;
 }
@@ -34,10 +31,11 @@ p {
 }
 
 .f-m {
-  font-family: "Lora", serif;
-  font-size: 22px;
-  line-height: 1.5;
+  font : 600 22px/1.5 "Lora", serif;
   text-align: justify;
+}
+
+#latest-posts .f-m {
   text-indent: 3em;
 }
 
@@ -45,19 +43,23 @@ h5 {
   font-size: 22px;
   line-height: 1.5;
   font-weight: 700;
+  background-color: #6f6f6f;
 }
 
 h4 {
   font-size: 28px;
   line-height: 1.5;
   font-weight: 700;
+  background-color: #6a6a6a;
 }
 
 h3 {
   font-size: 36px;
   line-height: 1.5;
   font-weight: 900;
+  background-color: #616161;
 }
+
 
 #top-menu {
   width: 100%;
@@ -91,31 +93,47 @@ h3 {
   justify-content: space-around;
   align-items: center;
 }
+#opinions .col-1-4 {
+  position : absolute;
+  top: 100px;
+  width: 100%;
+  height: 30px;
+}
+
+#opinions .col-1-4 .text {
+  width: 250px;
+  margin: auto;
+  background-color: #000;
+  color : #fff;
+  font-weight : 900;
+  line-height: 2em;
+}
 
 #opinions .col-1 {
   width: 100%;
   height: 500px;
-  padding: 30px 60px;
+  padding: 60px 60px;
 }
 
 #opinions .col-1 p {
   padding-top: 30px;
+  font-weight: 900;
 }
 
 #opinions .col-1:nth-child(4n) {
-  background: #b4b4b4;
+  background: #7f7f7f;
 }
 
 #opinions .col-1:nth-child(4n - 1) {
-  background: #b8b8b8;
+  background: #7b7b7b;
 }
 
 #opinions .col-1:nth-child(4n - 2) {
-  background: #bbb;
+  background: #767676;
 }
 
 #opinions .col-1:nth-child(4n - 3) {
-  background: #bfbfbf;
+  background: #717171;
 }
 
 main {
@@ -147,16 +165,16 @@ main {
 }
 
 #latest-posts .col-1:nth-child(4n-1) {
-  background-color: #c0c0c0;
+  background-color: #919191;
 }
 #latest-posts .col-1:nth-child(4n-2) {
-  background-color: #c6c6c6;
+  background-color: #969696;
 }
 #latest-posts .col-1:nth-child(4n-3) {
-  background-color: #cecece;
+  background-color: #9b9b9b;
 }
 #latest-posts .col-1:nth-child(4n) {
-  background-color: #cacaca;
+  background-color: #9f9f9f;
 }
 
 #latest-posts .col-1-2 {
