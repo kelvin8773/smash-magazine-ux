@@ -1,4 +1,3 @@
-
 html * {
   box-sizing: border-box;
   text-align: center;
@@ -19,19 +18,19 @@ header {
 }
 
 p {
-  font : 400 26px/1.5 "Indie Flower", cursive;
+  font: 400 26px/1.5 "Indie Flower", cursive;
   text-align: justify;
   text-indent: 2em;
 }
 
 .f-s {
-  font : 18px/1.5 "Lora", serif;
+  font: 200 18px/1.5 "Lora", serif;
   text-align: justify;
   text-indent: 3em;
 }
 
 .f-m {
-  font : 600 22px/1.5 "Lora", serif;
+  font: 600 22px/1.5 "Lora", serif;
   text-align: justify;
 }
 
@@ -60,52 +59,70 @@ h3 {
   background-color: #616161;
 }
 
-
 #top-menu {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
+
+#top-menu h5 {
+  background: none;
+}
+
 #top-menu .logo,
 #top-menu .search,
 #category .menu {
-  padding-top: 25px;
+  height: 100px;
+  padding-top: 30px;
+  background: #a9a9a9;
+}
+
+#top-menu .logo {
+  background: #888888;
+}
+
+#top-menu .search {
+  background: #999999;
 }
 
 #top-menu .logo,
 #top-menu .search,
 #category {
-  background: #a9a9a9;
   margin: 0 15px;
   min-width: 130px;
-  height: 80px;
 }
 
 #category .menu {
-  background: #a9a9a9;
-  width: 110px;
+  /* background: #a9a9a9; */
+  width: 160px;
+}
+
+#category {
+  display: grid;
+  grid-template-columns: repeat(5, 180px);
 }
 
 #opinions {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 #opinions .col-1-4 {
-  position : absolute;
+  position: absolute;
   top: 100px;
   width: 100%;
   height: 30px;
 }
 
 #opinions .col-1-4 .text {
-  width: 250px;
+  width: 280px;
   margin: auto;
+  padding: 0 10px;
   background-color: #000;
-  color : #fff;
-  font-weight : 900;
+  color: #fff;
+  font-weight: 900;
   line-height: 2em;
 }
 
@@ -195,11 +212,11 @@ main {
   background: #acacac;
 }
 
-[class*='ad-'] {
+[class*="ad-"] {
   padding: 40px 0;
 }
 
-[class*='block-ad-'] {
+[class*="block-ad-"] {
   width: 100%;
   height: 300px;
   background-color: #a4a4a4;
@@ -269,7 +286,7 @@ main {
   padding: 30px 50px;
 }
 
-#curated-posts .col-1 h3+p {
+#curated-posts .col-1 h3 + p {
   margin-top: 20px;
 }
 
@@ -316,7 +333,6 @@ footer li {
   line-height: 2em;
 }
 
-
 @media only screen and (max-width: 1080px) {
   #category {
     display: none;
@@ -336,10 +352,6 @@ footer li {
 }
 
 @media only screen and (min-width: 1080px) {
-  #category {
-    display: grid;
-    grid-template-columns: repeat(5, 140px);
-  }
   #latest-posts .col-1 {
     width: 33.3%;
   }
