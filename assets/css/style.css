@@ -1,0 +1,406 @@
+html * {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  color: #000;
+  font: 400 18px/1.5 "Ubuntu", sans-serif;
+}
+main {
+  background-color: #fff;
+}
+
+header {
+  width: 100%;
+  vertical-align: middle;
+  background: #b8b8b8;
+}
+
+p {
+  font: 400 26px/1.5 "Indie Flower", cursive;
+  text-align: justify;
+  text-indent: 2em;
+}
+
+.f-s {
+  font: 200 18px/1.5 "Lora", serif;
+  text-align: justify;
+  text-indent: 3em;
+}
+
+.f-m {
+  font: 600 22px/1.5 "Lora", serif;
+  text-align: justify;
+}
+
+#latest-posts .f-m {
+  text-indent: 3em;
+}
+
+h5 {
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 700;
+  background-color: #6f6f6f;
+}
+
+h4 {
+  font-size: 28px;
+  line-height: 1.5;
+  font-weight: 700;
+  background-color: #6a6a6a;
+}
+
+h3 {
+  font-size: 36px;
+  line-height: 1.5;
+  font-weight: 900;
+  background-color: #616161;
+}
+
+#top-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#top-menu h5 {
+  background: none;
+}
+
+#top-menu .logo,
+#top-menu .search,
+#category .menu {
+  height: 100px;
+  padding-top: 30px;
+  background: #a9a9a9;
+}
+
+#top-menu .logo {
+  background: #888888;
+}
+
+#top-menu .search {
+  background: #999999;
+}
+
+#top-menu .logo,
+#top-menu .search {
+  margin: 0 15px;
+  min-width: 130px;
+}
+
+#category .menu {
+  width: 160px;
+  max-width: 13vw;
+  margin: 0 5px;
+}
+
+#category {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
+
+#opinions {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#opinions .col-1-4 {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  height: 30px;
+}
+
+#opinions .col-1-4 .text {
+  width: 280px;
+  margin: auto;
+  padding: 0 10px;
+  background-color: #000;
+  color: #fff;
+  font-weight: 900;
+  line-height: 2em;
+}
+
+#opinions .col-1 {
+  width: 100%;
+  height: 500px;
+  padding: 100px 60px 20px 60px;
+}
+
+#opinions .col-1 p {
+  padding-top: 30px;
+  font-weight: 900;
+}
+
+#opinions .col-1:nth-child(4n) {
+  background: #7f7f7f;
+}
+
+#opinions .col-1:nth-child(4n - 1) {
+  background: #7b7b7b;
+}
+
+#opinions .col-1:nth-child(4n - 2) {
+  background: #767676;
+}
+
+#opinions .col-1:nth-child(4n - 3) {
+  background: #717171;
+}
+
+main {
+  width: 100%;
+}
+
+#latest-posts,
+#community-links,
+#curated-posts {
+  width: 100%;
+  max-width: 2800px;
+  margin: 0 auto;
+}
+
+#latest-posts {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+#latest-posts .col-1 {
+  padding: 30px 50px;
+}
+
+#latest-posts [class*="col-"] {
+  width: 100%;
+  height: 500px;
+}
+
+#latest-posts .col-1:nth-child(4n-1) {
+  background-color: #919191;
+}
+#latest-posts .col-1:nth-child(4n-2) {
+  background-color: #969696;
+}
+#latest-posts .col-1:nth-child(4n-3) {
+  background-color: #9b9b9b;
+}
+#latest-posts .col-1:nth-child(4n) {
+  background-color: #9f9f9f;
+}
+
+#latest-posts .col-1-2 {
+  width: 100%;
+  height: 500px;
+  background-color: #cdcdcd;
+}
+
+#latest-posts .ad-small {
+  width: 100%;
+  background: #afafaf;
+  height: 300px;
+}
+
+#latest-posts .ad-medium {
+  width: 100%;
+  height: 500px;
+  background: #acacac;
+}
+
+[class*="ad-"] {
+  padding: 40px 0;
+}
+
+[class*="block-ad-"] {
+  width: 100%;
+  height: 300px;
+  background-color: #a4a4a4;
+}
+
+#community-links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#community-links .col-1-4 {
+  width: 100%;
+  background-color: #cacaca;
+}
+#community-links .profile {
+  display: grid;
+  grid-template-columns: 250px auto;
+}
+#community-links .col-1-4 .photo {
+  background-color: #c7c7c7;
+  padding: 20px;
+}
+
+#community-links .col-1-4 .text {
+  padding: 30px 50px;
+  background-color: #cbcbcb;
+}
+#community-links .text p {
+  width: 90%;
+}
+
+#community-links [class*="col-"] {
+  height: 500px;
+  width: 100%;
+}
+
+#community-links .col-1 {
+  padding: 30px 50px;
+}
+
+#community-links .col-1 p {
+  padding-top: 30px;
+}
+
+#community-links .col-1:nth-child(4n-1) {
+  background: #cecece;
+}
+#community-links .col-1:nth-child(4n-3) {
+  background: #c2c2c2;
+}
+#community-links .col-1:nth-child(4n-2) {
+  background: #c7c7c7;
+}
+#community-links .col-1:nth-child(4n) {
+  background: #cacaca;
+}
+
+#curated-posts {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+#curated-posts .col-1 {
+  padding: 30px 50px;
+}
+
+#curated-posts .col-1 h3 + p {
+  margin-top: 20px;
+}
+
+#curated-posts [class*="col-"] {
+  width: 100%;
+  height: 500px;
+}
+
+#curated-posts .guide:nth-child(4n-3) {
+  background-color: #c0c0c0;
+}
+#curated-posts .guide:nth-child(4n-2) {
+  background-color: #c5c5c5;
+}
+#curated-posts .guide:nth-child(4n-1) {
+  background-color: #cacaca;
+}
+#curated-posts .guide:nth-child(4n) {
+  background-color: #cecece;
+}
+#curated-posts .col-1-4 {
+  background-color: #acacac;
+}
+
+footer {
+  width: 100%;
+  height: 500px;
+  background-color: #999;
+}
+
+footer .items {
+  width: 500px;
+  height: 400px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+footer ul {
+  margin: 20px 0;
+}
+
+footer li {
+  display: inline-block;
+  line-height: 2em;
+}
+
+@media only screen and (max-width: 1000px) {
+  #category {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 740px) {
+  #opinions .col-1 {
+    width: 50%;
+  }
+  #latest-posts .col-1 {
+    width: 50%;
+  }
+  #curated-posts .col-1 {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  #latest-posts .col-1 {
+    width: 33.3%;
+  }
+  #latest-posts .col-1-2 {
+    width: 66.6%;
+  }
+  #community-links .col-1 {
+    width: 50%;
+  }
+  #community-links .col-1-4 .text p {
+    width: 70%;
+  }
+  #curated-posts .col-1 {
+    width: 33.3%;
+  }
+  #curated-posts .col-1-4 {
+    width: calc(33.3% * 2);
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  #category .menu {
+    margin: 0 2vw;
+  }
+  #latest-posts .col-1 {
+    width: 25%;
+  }
+  #latest-posts .col-1-2 {
+    width: 50%;
+  }
+  #curated-posts .col-1 {
+    width: 25%;
+  }
+  #curated-posts .col-1-4 {
+    width: calc(25% * 4);
+  }
+}
+
+@media only screen and (min-width: 1980px)
+and (max-width: 2500px) {
+  #opinions .col-1 {
+    width: 33.33%;
+  }
+  #opinions .col-1:nth-child(4n) {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 2500px) {
+  #opinions .col-1 {
+    width: 25%;
+  }
+}
